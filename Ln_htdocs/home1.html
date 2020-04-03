@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="styles1.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+
+      } else {
+        $('nav').removeClass('black');
+      }
+    })
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav>
+      <img class="logo" src="logo.png">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="signup.html">Signup</a></li>
+        <li><a class="active" href="login.html">Login</a></li>
+      </ul>
+    </nav>
+         
+    <section class="sec1">
+    
+
+    </section>
+    <section class="content">
+      
+    </section>
+
+  </div>
+
+</body>
+
+</html>

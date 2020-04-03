@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <form action="signup.php">
+
+    <input type="text" id="pass" placeholder="password"><br><br>
+    <p style="display:none" id="passErr"></p>
+    <input type="text" id="pass2" placeholder="Re-password"><br><br>
+    <p style="display:none" id="pass2Err"></p>
+    <p style="display:none"></p>
+    <input type="submit">
+
+  </form>
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+  <script>
+    $(document).ready(function()
+    {
+          $("form").submit(function(event) {
+            console.log("Hi");
+            event.preventDefault();
+          });
+
+
+          $("#pass").bind('blur', function() {
+            let pass = $("#pass").val();
+            if (pass == "") {
+              $("#passErr").html("Empty");
+              $("#passErr").css("color", "red");
+              $("#passErr").css("text-decoration", "underline");
+              $("#passErr").show();
+            } else {
+              $("#passErr").html("correct");
+              $("#passErr").css("color", "blue");
+            }
+          });
+        });
+
+
+  </script>
+
+</body>
+
+</html>

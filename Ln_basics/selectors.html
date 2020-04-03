@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <p class="demo">First para</p>
+    <p class="demo">Second para</p>
+    <p class="demo">Third para</p>
+    <input type="button" id="btnClick" value="Click me"/>
+    <script type="text/javascript">
+      let paragraphs=document.getElementsByTagName("p");
+      console.log(paragraphs[0].innerHTML);
+
+      let classPara=document.getElementsByClassName("demo");
+      console.log(classPara[1].innerHTML);
+
+      let querySelector=document.querySelectorAll("demo");
+      console.log(querySelector[2].innerHTML);
+
+      console.log(querySelector[2].childNodes[0].nodeValue);
+
+      document.getElementById("btnClick").addEventListener("Click",clicked);
+       function clicked()
+       {
+         alert("You clicked me !");
+       }
+       var numbers = [45,4,9,16,25];
+       numbers.forEach((value)=>console.log(value));
+       for(let i=0;i<numbers.length;i++)
+       console.log(numbers[i]);
+     }
+    </script>
+  </body>
+</html>

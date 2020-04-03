@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="styles1.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+
+      } else {
+        $('nav').removeClass('black');
+      }
+    })
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav>
+      <img class="logo" src="logo.png">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">Contact me</a></li>
+        <li><a href="#">Signup</a></li>
+        <li><a class="active" href="#">Login</a></li>
+      </ul>
+    </nav>
+
+    <section class="sec1">
+
+    </section>
+    <section class="content">
+      <center>
+        <table>
+          <td><img src="C:\Users\Devastator\Documents\Project\img\me.jpg" alt="OOPS !!!" width="128" height="128" style=" border-radius:1000px"></td>
+          <td><h1>Aditya Bisoi</h1>
+              E-mail:adi@gmail.com <br>
+              Address:New Street, 5th Lane, Jeypore <br>
+              Phone:987654321 <br></td>
+        </table>
+
+      <br>
+
+      <hr size='3' noshade>
+      <h2><u>Work Experience</u></h2>
+      <p>
+        <em>Basic android application development</em>
+        <h1>I am a <span class="type"></span></h1>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="typed.min.js"></script>
+        <script type="text/javascript">
+
+            var typed = new Typed('.type', {
+            strings: ["Web developer", "Android developer"],
+            loop:true,
+            typeSpeed: 40,
+            backSpeed:40,
+            backDelay:1000,
+             });
+
+        </script>
+      </p>
+      <h2><u>Education</u></h2>
+      <table border="1">
+        <tr>
+          <th>Degree</th>
+          <th>Board</th>
+          <th>Percentage/GPA</th>
+        </tr>
+        <tr>
+          <td>10th</td>
+          <td>ICSE</td>
+          <td>94.2%</td>
+        </tr>
+        <tr>
+          <td>12th</td>
+          <td>CHSE</td>
+          <td>84.5%</td>
+        </tr>
+        <tr>
+          <td>B.Tech</td>
+          <td>Autonomous</td>
+          <td>8.3</td>
+        </tr>
+      </table>
+      <h2><u>Community Involvement</u></h2>
+      <h4>Zairza Technical Group(2017-present)</h4>
+      <p>Member at the technical group of CET and have undertaken several projects</p>
+      <h4>Google Developers Group(2017-present)</h4>
+      <p>I do attend seminars and hackathons organised by the group</p>
+      <h2><u>Languages</u></h2>
+      English <br>
+      Odia <br>
+      Hindi <br>
+      </center>
+    </section>
+
+  </div>
+
+</body>
+
+</html>

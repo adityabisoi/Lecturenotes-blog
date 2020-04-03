@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script "type=" text/javascript" src="js/validate_2.js"></script>
+</head>
+
+<body>
+
+  <form name="login" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    *First Name:<br><input type="text" name="fname" id="fname" onblur="validate('fname', 'fnameErr')" onkeypress="validate('fname', 'fnameErr')"><br>
+    <p id="fnameErr" style="display:none">*Required</p>
+
+    *Last Name:<br><input type="text" name="lname" id="lname" onblur="validate('lname', 'lnameErr')"><br>
+    <p id="lnameErr" style="display:none">*Required</p>
+
+    *Email:<br><input type="email" name=email" id="email" onblur="validate('email', 'emailErr')"><br>
+    <p id="emailErr" style="display:none">*Required</p>
+
+    *Password:<br><input type="password" name="pass1" id="pass1" onblur="validate('pass1', 'pass1Err')"><br>
+    <p id="pass1Err" style="display:none">*Required</p>
+
+    *Re-Password:<br><input type="password" name="pass2" id="pass2" onblur="validatePass()"><br>
+    <p id="pass2Err" style="display:none">*Required</p>
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+h1{
+  animation: type 3s;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: fantasy;
+}
+@keyframes type {
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 21ch;
+  }
+
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+    <p>Tag selector</p>
+    <p>Second paragraph</p>
+    <p id="paraId">Id selector</p>
+    <p class="paraClass">Class selector</p>
+    <button id="click" >Click</button>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        console.log($("p").html());
+        console.log($("p:nth-child(2)").html());
+        console.log($("#paraId").html());
+        $("#click").click(function(){
+          alert("Jquery click event");
+        });
+      });
+    </script>
+  </body>
+</html>

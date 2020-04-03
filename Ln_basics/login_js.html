@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login with JS</title>
+    <link rel="stylesheet" href="./css/back.css" >
+    <script type="text/javascript" src="./js/validate.js">
+
+    </script>
+
+    </script>
+  </head>
+  <body>
+    <center>
+    <fieldset style="background-color:cyan;;padding:30px">
+      <legend>Signup</legend>
+      Firstname:<br>
+      <input type="text" id="fname" placeholder="Firstname" required autofocus style="border-radius:10px"><br>
+      <p id="error1" style="display:none;color:red">First name cannot be empty !</p>
+      Lastname:<br>
+      <input type="text" id="lname" placeholder="Lastname" required style="border-radius:10px"><br>
+      <p id="error2" style="display:none;color:red">Last name connot be empty !</p>
+      E-mail:<br>
+      <input type="email" id="mail" placeholder="abc@xyz.com" style="border-radius:10px"><br>
+      <p id="error3" style="display:none;color:red">E-mail cannot be empty !</p>
+      Password:<br>
+      <input type="password" id="pass" placeholder="password" style="border-radius:10px"><br>
+      Re-enter password:<br>
+      <input type="password" id="rpass" placeholder="password" style="border-radius:10px"><br>
+      <p id="error" style="display:none;color:red">Passwords don't match !</p>
+
+      <button type="button" onclick="myFunction()">Login</button>
+   </center>
+  </body>
+</html>

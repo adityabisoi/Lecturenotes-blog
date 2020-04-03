@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="styles1.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+
+      } else {
+        $('nav').removeClass('black');
+      }
+    })
+  </script>
+  <style>
+        .wrapper1{
+          display:grid;
+          grid-template-columns: 30% 70%;
+          /*
+          grid-column-gap:1em;
+          grid-row-gap:1em;*/
+    
+        }
+        .wrapper1 > div{
+          background:cyan;
+          padding:1em;
+    
+        }
+        .wrapper1 > div:nth-child(odd){
+          background:#ddd;
+        }
+      </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav>
+      <img class="logo" src="logo.png">
+      <ul>
+        <li><a href="home.php">Home</a></li>
+        <li><a href="about.php">Contact me</a></li>
+        <li><a href="signup.php">Signup</a></li>
+        <li><a class="active" href="login.php">Login</a></li>
+      </ul>
+    </nav>
+
+    <section class="sec1">
+
+    </section>
+ 
+            <div class="wrapper1">
+                    <div>
+                      <center>
+                          <img class="img" src="me.jpg" alt="OOPS !!!" width="250" height="250" style=" border-radius:1000px"><br><br>
+                          <table style="font-weight: bold" cellspacing="30">
+                            <tr>
+                              <td>Name:</td>
+                              <td>Aditya Bisoi</td>
+                            </tr>
+                            <tr>
+                              <td>Email:</td>
+                              <td>adi@gmail.com</td>
+                            </tr>
+                            <tr>
+                              <td>Age:</td>
+                              <td>21</td>
+                            </tr>
+                            <tr>
+                               <td>Degree:</td>
+                               <td>B.Tech</td>
+                            </tr>
+                            <tr>
+                              <td>Location:</td>
+                              <td>Singapore</td>
+                            </tr>
+                          </table>
+                      </center>
+                
+                    </div>
+                    <div >
+                        
+                          <h1>I am a <span class="type"></span></h1>
+                          <script src="jquery-3.4.1.min.js"></script>
+                          <script src="typed.min.js"></script>
+                          <script type="text/javascript">
+                  
+                              var typed = new Typed('.type', {
+                              strings: ["Web developer.", "Android developer."],
+                              loop:true,
+                              typeSpeed: 40,
+                              backSpeed:40,
+                              backDelay:1000,
+                               });
+                  
+                          </script>
+                        </p>
+                        <h2><u>Education</u></h2>
+                        <table border="1">
+                          <tr>
+                            <th>Degree</th>
+                            <th>Board</th>
+                            <th>Percentage/GPA</th>
+                          </tr>
+                          <tr>
+                            <td>10th</td>
+                            <td>ICSE</td>
+                            <td>94.2%</td>
+                          </tr>
+                          <tr>
+                            <td>12th</td>
+                            <td>CHSE</td>
+                            <td>84.5%</td>
+                          </tr>
+                          <tr>
+                            <td>B.Tech</td>
+                            <td>Autonomous</td>
+                            <td>8.3</td>
+                          </tr>
+                        </table>
+                        <h2><u>Community Involvement</u></h2>
+                        <h4>Zairza Technical Group(2017-present)</h4>
+                        <ul>
+                          <li>
+                              Member at the technical group of CET and have undertaken several projects
+
+                          </li>
+                        </ul>
+                        <h4>Google Developers Group(2017-present)</h4>
+                        <ul>
+                            <li>
+                                I do attend seminars and hackathons organised by the group
+  
+                            </li>
+                          </ul>
+                        
+                        <h2><u>Languages</u></h2>
+                        <ul>
+                          <li>English</li>
+                          <li>Odia(Native)</li>
+                          <li>Hindi</li>
+                        </ul>
+                
+                    </div>
+                  </div>
+
+
+  </div>
+
+</body>
+
+</html>

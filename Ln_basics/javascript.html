@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+  <script>
+    function myFunction(){
+        document.getElementById("demo").innerHTML="Changed !";
+        document.getElementById("demo").style.color="rgb(180, 55, 55)";
+        var name=document.getElementById("name").value;
+        alert("Enter name");
+        var length=document.getElementById("name").value.length;
+        if(length<1)
+        document.getElementById("error").style.display="block";
+        var pas=document.getElementById("pass").value;
+        var pas1=document.getElementById("rpass").value;
+        if(pas!=pas1)
+        alert("No match");
+        else {
+          alert("Matched");
+        }
+
+      }
+    </script>
+</head>
+
+<body>
+  <p id="demo">Hello World</p>
+  <form>
+    <input type="text" id="name"><br>
+    Password:<br><input type="text" id="pass"><br>
+    Re-enter Password:<br><input type="text" id="rpass"><br>
+    <p id="error" style="display:none;">Error</p>
+  </form><br>
+  <button type="button" onclick="myFunction()">Click</button>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Form</title>
+</head>
+
+<body>
+  <div>  <!-- Block Level element -->
+    Hello
+  </div>
+  <div>
+    World
+  </div>
+  <span>Hello</span>
+  <span>World</span>
+  <div style="background-color:green;color:white;padding:20px;">
+    <h2>Lambo</h2>
+    <p>Benz</p>
+    <span style="color:blue;" title="Benzo">Ferrari</span>
+  </div>
+  <fieldset>
+    <legend>Signup</legend>
+    <form action="signup.php" method="post">
+      First Name:<br>
+      <input type="text" name="fname" placeholder="Firstname" required autofocus>
+      <br>
+      Last Name:<br>
+      <input type="text" name="lname" placeholder="Lastname" required>
+      <br>
+      E-mail:<br>
+      <input type="email" name="mail" placeholder="xyz@abc.com" required>
+      <br>
+      Password:<br>
+      <input type="password" name="pass" placeholder="Password" required>
+      <br>
+      Birthday:<br>
+      <input type="date" name="date"><br>
+      Semester:<br>
+      <select name="sems" size="3">
+        <option value="1">1st</option>
+        <option value="2">2nd</option>
+        <option value="3">3rd</option>
+        <option value="4">4th</option>
+
+      </select><br>
+      Gender:<br>
+      <input type="radio" name="gen" value="male">Male <br>
+      <input type="radio" name="gen" value="female">Female <br>
+
+      Courses:<br>
+      <input type="checkbox" name="course" value="html">html <br>
+      <input type="checkbox" name="course" value="css">css <br>
+      <input type="checkbox" name="course" value="js">js <br>
+      <input type="checkbox" name="course" value="db">db <br>
+      <br>
+      <input type="submit">
+      <input type="reset"><br>
+    </form>
+  </fieldset>
+</body>
+</html>

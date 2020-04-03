@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Index</title>
+  <link rel="stylesheet" href="view.css">
+  <link rel="stylesheet" href="styles1.css">
+  <style>
+    .wrapper{
+      display:grid;
+      grid-template-columns: 30% 70%;
+      /*
+      grid-column-gap:1em;
+      grid-row-gap:1em;*/
+
+    }
+    .wrapper > div{
+      background:cyan;
+      padding:1em;
+
+    }
+    .wrapper > div:nth-child(odd){
+      background:#ddd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <header>
+      <div>
+          <nav>
+              <img class="logo" src="logo.png">
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a class="active" href="login.html">Login</a></li>
+              </ul>
+            </nav>
+    </header>
+  </div>
+  <div class="wrapper">
+    <div>
+      <img src="C:\Users\DEBADITYA\Documents\Project\img\me.jpg" alt="Oops!" width="250px" height="250px" style="border-radius:200px"><br><br>
+      <p>E-mail:adi@gmail.com</p>
+      <p>Phone:9876543210</p>
+      <p>Android & web developer</p>
+
+    </div>
+    <div >
+      <h1>5G Network: Is the future really near ?</h1>
+      <p>5G networks are digital cellular networks, in which the service area covered by providers is divided into small geographical areas called cells. Analog signals representing sounds and images are digitized in the phone, converted by an analog to digital converter and transmitted as a stream of bits. All the 5G wireless devices in a cell communicate by radio waves with a local antenna array and low power automated transceiver (transmitter and receiver) in the cell, over frequency channels assigned by the transceiver from a common pool of frequencies, which are reused in geographically separated cells. The local antennas are connected with the telephone network and the Internet by a high bandwidth optical fiber or wireless backhaul connection. Like existing cellphones, when a user crosses from one cell to another, their mobile device is automatically "handed off" seamlessly to the antenna in the new cell.
+
+There are plans to use millimeter waves for 5G.[14] Millimeter waves have shorter range than microwaves, therefore the cells are limited to smaller size; The waves also have trouble passing through building walls.[15] Millimeter wave antennas are smaller than the large antennas used in previous cellular networks. They are only a few inches (several centimeters) long. Another technique used for increasing the data rate is massive MIMO (multiple-input multiple-output).[15] Each cell will have multiple antennas communicating with the wireless device, received by multiple antennas in the device, thus multiple bitstreams of data will be transmitted simultaneously, in parallel. In a technique called beamforming the base station computer will continuously calculate the best route for radio waves to reach each wireless device, and will organize multiple antennas to work together as phased arrays to create beams of millimeter waves to reach the device.[15][16]
+
+The new 5G wireless devices also have 4G LTE capability, as the new networks use 4G for initially establishing the connection with the cell, as well as in locations where 5G access is not available.[17]
+
+5G can support up to a million devices per square kilometer, while 4G supports only up to 100,000 devices per square kilometer.[18]
+
+Usage scenario
+The ITU-R has defined three main uses for 5G. They are Enhanced Mobile Broadband (eMBB), Ultra Reliable Low Latency Communications (URLLC), and Massive Machine Type Communications (mMTC).[19] Enhanced Mobile Broadband (eMBB) uses 5G as a progression from 4G LTE mobile broadband services, with faster connections, higher throughput, and more capacity. Ultra-Reliable Low-Latency Communications (URLLC) refer to using the network for mission critical applications that requires uninterrupted and robust data exchange. Massive Machine-Type Communications (mMTC) would be used to connect to a large number of low power, low cost devices, which have high scalability and increased battery lifetime, in a wide area. Neither URLLC nor mMTC are expected to be deployed widely before 2021.
+
+Performance
+Speed
+5G NR speed in sub-6 GHz bands can be slightly higher than the 4G with a similar amount of spectrum and antennas,[20][21] though some 3GPP 5G networks will be slower than some advanced 4G networks, such as T-Mobile's LTE/LAA network, which achieves 500+ Mbit/s in Manhattan.[22] The 5G specification allows LAA (License Assisted Access) as well but LAA in 5G has not yet been demonstrated. Adding LAA to an existing 4G configuration can add hundreds of megabits per second to the speed, but this is an extension of 4G, not a new part of the 5G standard.[22]
+
+Speeds in the less common millimeter wave spectrum can be substantially higher.
+
+Latency
+In 5G, the "air latency" target is 1-4 milliseconds, although the equipment shipping in 2019 has tested air latency of 8-12 milliseconds.[23][24] The latency to the server must be added to the "air latency." Verizon reports the latency on its 5G early deployment is 30 ms.[25]
+
+Standards
+Initially, the term was associated with the International Telecommunication Union's IMT-2020 standard, which required a theoretical peak download capacity of 20 gigabits, along with other requirements.[26] Then, the industry standards group 3GPP chose the 5G NR (New Radio) standard together with LTE as their proposal for submission to the IMT-2020 standard.[27][28]
+
+The first phase of 3GPP 5G specifications in Release-15 is scheduled to complete in 2019. The second phase in Release-16 is due to be completed in 2020.[29]
+
+5G NR can include lower frequencies (FR1), below 6 GHz, and higher frequencies (FR2), above 24 GHz. However, the speed and latency in early FR1 deployments, using 5G NR software on 4G hardware (non-standalone), are only slightly better than new 4G systems, estimated at 15 to 50% better.[30][31][32]
+
+IEEE covers several areas of 5G with a core focus in wireline sections between the Remote Radio Head (RRH) and Base Band Unit (BBU). The 1914.1 standards focus on network architecture and dividing the connection between the RRU and BBU into two key sections. Radio Unit (RU) to the Distributor Unit (DU) being the NGFI-I (Next Generation Fronthaul Interface) and the DU to the Central Unit (CU) being the NGFI-II interface allowing a more diverse and cost-effective network. NGFI-I and NGFI-II have defined performance values which should be compiled to ensure different traffic types defined by the ITU are capable of being carried. 1914.3 standard is creating a new Ethernet frame format capable of carrying IQ data in a much more efficient way depending on the functional split utilized. This is based on the 3GPP definition of functional splits. Multiple network synchronization standards within the IEEE groups are being updated to ensure network timing accuracy at the RU is maintained to a level required for the traffic carried over it.</p>
+
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
